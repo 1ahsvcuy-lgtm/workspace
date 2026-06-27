@@ -1,0 +1,11 @@
+[Unit]
+Description=Synchronize WORKSPACE every five minutes
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=5min
+Persistent=true
+Unit=workspace-sync.service
+
+[Install]
+WantedBy=timers.target

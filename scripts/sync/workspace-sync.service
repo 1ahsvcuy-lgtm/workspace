@@ -1,0 +1,10 @@
+[Unit]
+Description=Synchronize WORKSPACE with GitHub
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=workspace
+Environment=WORKSPACE_REPO=/srv/workspace
+ExecStart=/usr/bin/bash /srv/workspace/scripts/sync/sync-workspace.sh

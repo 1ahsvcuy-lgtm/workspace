@@ -1,0 +1,4 @@
+# CS Vision workspace
+.ag_vision/
+# Claude bridge commands
+.claude/

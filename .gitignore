@@ -1,0 +1,24 @@
+# Obsidian — локальные настройки (не нужны на других машинах)
+.obsidian/
+
+# Claude Code — локальные сессии
+.claude/
+.ag_vision/
+
+# Системные файлы Windows
+desktop.ini
+Thumbs.db
+$RECYCLE.BIN/
+
+# Временные файлы
+*.tmp
+*.bak
+~$*
+
+# Переменные окружения и секреты (НИКОГДА не коммитить)
+.env
+.env.*
+secrets.*
+credentials.*
+*.key
+*.pem

@@ -12,7 +12,7 @@ if (-not $Repository) {
 }
 $syncDir = Join-Path $Repository ".sync"
 $logFile = Join-Path $syncDir "sync.log"
-$mutex = [Threading.Mutex]::new($false, "Local\WORKSPACE-Git-Sync")
+$mutex = [Threading.Mutex]::new($false, "Global\WORKSPACE-Git-Sync")
 $hasLock = $false
 
 function Write-SyncLog([string]$Message) {
